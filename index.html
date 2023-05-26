@@ -7,6 +7,10 @@
         body {
             margin: 0;
             overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
 
         #canvas {
@@ -43,6 +47,12 @@
 
             100% {
                 opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                align-items: flex-start;
             }
         }
     </style>
